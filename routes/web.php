@@ -15,4 +15,6 @@ use App\Http\Controllers\JobController;
 */
 
 
-Route::resource('/', JobController::class)->only('index');
+// for using only index route
+// Route::resource('/', JobController::class)->only('index');
+Route::resource('/', JobController::class);
