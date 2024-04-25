@@ -21,7 +21,7 @@ class JobController extends Controller
      */
     public function create()
     {
-        //
+        return view('jobBoard.apply', ['Jobs' => Job::all()]);
     }
 
     /**
@@ -29,7 +29,7 @@ class JobController extends Controller
      */
     public function store(Request $request)
     {
-        return view('jobBoard.apply');
+        //
     }
 
     /**
