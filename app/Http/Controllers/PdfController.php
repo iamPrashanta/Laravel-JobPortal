@@ -13,7 +13,7 @@ class PdfController extends Controller
     }
     public function generatePDF()
     {
-        $data = ['title' => 'domPDF in Laravel 10'];
+        $data = ['title' => 'domPDF in Laravel 10', 'Orders' => Orders::all()];
         $pdf = PDF::loadView('pdf.document', $data);
         return $pdf->download('document.pdf');
     }
