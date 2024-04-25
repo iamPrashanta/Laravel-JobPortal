@@ -13,5 +13,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Job::factory(100)->create();
         // for users
         \App\Models\User::factory(100)->create();
+        // for orders
+        \App\Models\Orders::factory(100)->create();
     }
 }
