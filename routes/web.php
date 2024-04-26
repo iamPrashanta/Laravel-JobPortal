@@ -16,18 +16,18 @@ use Illuminate\Support\Facades\Mail;
 // Route::resource('/', JobController::class)->only('index');
 Route::resource('/', JobController::class);
 
-Route::get('/test', [TestController::class, 'test'])->middleware('userLogin')->name('test');
+// deleted
+// Route::get('/test', [TestController::class, 'test'])->middleware('userLogin')->name('test');
 
 
 
 
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
-Route::get('/getDbData/{sid}', [TestController::class, 'getDbData'])->where(['sid'=>'[0-9]+'])->middleware('auth.check');
 
+// deleted
+// Route::get('/getDbData/{sid}', [TestController::class, 'getDbData'])->where(['sid'=>'[0-9]+'])->middleware('auth.check');
 
-// for sending email
-Route::get('email-test', [TestEmail::class, 'emailtest']);
 
 
 // get orders

@@ -28,6 +28,8 @@
             </tr>
         @endforeach
     </table>
+
+    <p>{{ $ending }}</p>
 </body>
 
 </html>
